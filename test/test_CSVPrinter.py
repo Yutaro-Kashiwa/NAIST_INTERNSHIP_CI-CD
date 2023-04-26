@@ -2,9 +2,9 @@ import unittest
 import os
 from NAIST_lecture_ci_cd.CSVPrinter import CSVPrinter
 
-def setupmodule():
+def setUpModule():
     print('Running setUpModule')
-def teardownmodule():
+def tearDownModule():
     print('Running tearDownModule')
 
 class TestCSVPrinter(unittest.TestCase):
@@ -19,6 +19,6 @@ class TestCSVPrinter(unittest.TestCase):
     def tearDown(self):
         print("Running tearDown")
     def test_read_1(self):
-        printer = CSVPrinter("./test/sample.csv")
+        printer = CSVPrinter("sample.csv")
         l = printer.read()
         self.assertEqual(3, len(l))

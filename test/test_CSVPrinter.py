@@ -1,6 +1,6 @@
 import unittest
 import os
-from NAIST_lecture.CSVPrinter import CSVPrinter
+from naist_lecture.CSVPrinter import CSVPrinter
 
 def setUpModule():
     print('Running setUpModule')

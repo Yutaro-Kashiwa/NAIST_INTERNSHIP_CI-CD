@@ -2,9 +2,9 @@ import unittest
 import os
 from NAIST_lecture_CI_CD.CSVPrinter import CSVPrinter
 
-def setUpModule():
+def setupmodule():
     print('Running setUpModule')
-def tearDownModule():
+def teardownmodule():
     print('Running tearDownModule')
 
 class TestCSVPrinter(unittest.TestCase):

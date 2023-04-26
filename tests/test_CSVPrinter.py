@@ -19,6 +19,6 @@ class TestCSVPrinter(unittest.TestCase):
     def tearDown(self):
         print("Running tearDown")
     def test_read_1(self):
-        printer = CSVPrinter("./test/sample.csv")
+        printer = CSVPrinter("sample.csv")
         l = printer.read()
         self.assertEqual(3, len(l))
